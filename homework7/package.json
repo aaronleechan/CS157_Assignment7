@@ -1,0 +1,21 @@
+{
+  "name": "hw7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "jade": "^1.11.0",
+    "mongodb": "^3.0.7",
+    "monk": "^6.0.5",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.17.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h1= title
+    form#formUpdateNote(name="updatenote",method="post",action="/updatenote")
+        h2= term
+        input#inputDefinition(type="text", name="term" value="#{term}" hidden)
+        input#inputDefinition(type="text", placeholder="definition", name="definition" required)
+        button#btnSubmit(type="submit") submit

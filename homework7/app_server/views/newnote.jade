@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h1= title
+    form#formAddNote(name="addnote",method="post",action="/addnote")
+        input#inputTerm(type="text", placeholder="term", name="term" required)
+        input#inputDefinition(type="text", placeholder="definition", name="definition" required)
+        button#btnSubmit(type="submit") submit

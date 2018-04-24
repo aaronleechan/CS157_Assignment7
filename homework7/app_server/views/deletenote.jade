@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    h1 Delete Note
+    p OK to delete #{term}?
+    form#formDeleteUser(name="deletenote",method="post",action="/deletenote/#{term}")
+        button#btnSubmit(type="submit") Delete

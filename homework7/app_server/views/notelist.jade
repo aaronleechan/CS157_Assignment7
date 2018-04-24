@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1.
+        Notes
+    ul
+        each note in notelist
+            li
+                p.term #{note.term}
+                p #{note.definition}
+                a(href="/editnote/#{note.term}") edit
+                p
+                a(href="/deletenote/#{note.term}") delete
